@@ -92,6 +92,7 @@ h2{
   margin: 0 auto 2rem;
   width: min-content;
   text-transform: uppercase;
+  color: var(--azul-brilho);
 }
 
 h2::after{
@@ -100,7 +101,7 @@ h2::after{
   width: 50%;
   margin: 8px auto 0;
   height: 2px;
-  background-color: #000;
+  background-color: var(--azul-brilho);
 }
 
 h3{
@@ -125,7 +126,9 @@ h3{
   background-color: var(--azul-brilho);
   color: #fff;
 }
-
+#produtos h2{
+  color: #fff;
+}
 #produtos h2::after{
   background-color: #fff;
 }
@@ -149,9 +152,6 @@ h3{
 img{
   max-width: 100%;
 }
-
-
-
 
 
 /* *FOOTER */
@@ -198,7 +198,14 @@ footer li{
   align-items: center;
 }
 
+img{
+  -webkit-user-drag: none;
+}
+
 @media (max-width: 800px) {
+  *{
+    outline: 1px solid red ;
+  }
   :root{
     --size: 90vw;
   }
@@ -212,6 +219,7 @@ footer li{
 
   .header_grid{
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   header .logo{
