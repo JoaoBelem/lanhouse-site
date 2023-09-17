@@ -203,9 +203,6 @@ img{
 }
 
 @media (max-width: 800px) {
-  *{
-    outline: 1px solid red ;
-  }
   :root{
     --size: 90vw;
   }
